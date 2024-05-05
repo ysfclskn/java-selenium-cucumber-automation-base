@@ -11,7 +11,7 @@ It's a base java selenium test automation project.
 - Allure - for Report
 - IDE (IntelliJ IDEA, Eclipse, etc.)
 
-## Setup
+# Setup
 
 1. **Clone the repository:**
 
@@ -30,6 +30,25 @@ It's a base java selenium test automation project.
     ```
     mvn install
     ```
+
+# Project Structure
+
+```
+📦 java-selenium-cucumber-automation-base
+└─ src
+   ├─ test
+   │  ├─ java
+   │  │  ├─ config 
+   │  │  ├─ pages
+   │  │  ├─ runners
+   │  │  ├─ steps
+   │  │  └─ utils
+   │  └─ resources
+   │     ├─ features
+   │     ├─ allure.properties -> Allure report configs
+   │     └─ junit-platform.properties -> Junit configs
+   └─ pom.xml
+```
 
 # Run Project
 
@@ -75,25 +94,6 @@ can use one of the terminal commands mentioned above or run it with ```mvn clean
 
 ```
 allure serve target/allure-results
-```
-
-# Project Structure
-
-```
-📦 java-selenium-cucumber-automation-base
-└─ src
-   ├─ test
-   │  ├─ java
-   │  │  ├─ config 
-   │  │  ├─ pages
-   │  │  ├─ runners
-   │  │  ├─ steps
-   │  │  └─ utils
-   │  └─ resources
-   │     ├─ features
-   │     ├─ allure.properties -> Allure report configs
-   │     └─ junit-platform.properties -> Junit configs
-   └─ pom.xml
 ```
 
 # Support
