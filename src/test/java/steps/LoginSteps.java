@@ -5,6 +5,7 @@ import io.cucumber.java.en.When;
 import pages.LoginPage;
 
 public class LoginSteps {
+
     LoginPage loginPage = new LoginPage();
 
     @When("login with {string} username and {string} password on login page")

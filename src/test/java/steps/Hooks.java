@@ -8,7 +8,6 @@ import io.qameta.allure.Allure;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import utils.Driver;
 
 import java.io.File;
@@ -21,7 +20,7 @@ public class Hooks {
 
     @Before
     public void setup() {
-       Driver.setWebDriver();
+        Driver.setWebDriver();
         Driver.getDriver().get(baseConfig.getUrl());
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         Driver.getDriver().manage().window().maximize();

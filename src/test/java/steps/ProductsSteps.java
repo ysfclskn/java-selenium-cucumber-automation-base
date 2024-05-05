@@ -5,6 +5,7 @@ import io.cucumber.java.en.When;
 import pages.ProductsPage;
 
 public class ProductsSteps {
+
     ProductsPage productsPage = new ProductsPage();
 
     @When("add random product to cart on products page")
