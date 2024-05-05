@@ -12,7 +12,7 @@ public class BaseConfig {
     String env = System.getProperty("env");
     String browser = System.getProperty("browser");
     String headless = System.getProperty("headless");
-    String gridUrl = "http://localhost5555";
+    String gridUrl = "";
 
     public String getUrl() {
         env = (env != null) ? env : "prod";
