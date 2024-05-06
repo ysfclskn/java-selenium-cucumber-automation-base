@@ -51,23 +51,25 @@ Example for `@smoke` tag:
 mvn test -D"cucumber.filter.tags=@smoke"
 ```
 
-### Run Tests with Specific Parameters
-
-Example Run : ``` mvn test clean -Dbrowser=chrome -Dheadless=true ```
-
 ### Run Parallel
 
 After setting the `cucumber.execution.parallel.enabled` parameter to `true` in the `junit-platform.properties` file, you
 can use one of the terminal commands mentioned above or run it with ```mvn clean run```
 
+
+### Run Tests with Specific Parameters
+
+Example Run : ``` mvn test clean -Dbrowser=chrome -Dheadless=true ```
+
+
 #### Parameters
 
 | key      | value             | default |
-|----------|-------------------|---------|
-| browser  | chrome            | chrome  | 
-| headless | true,false        | false   |
-| env      | test,prod         | prod    |
-| gridUrl  | selenium grid url | prod    |
+|----------|-------------------|-------|
+| browser  | chrome, firefox   | chrome | 
+| headless | true,false        | false |
+| env      | test,prod         | prod  |
+| gridUrl  | selenium grid url |     |
 
 # Reporting
 
